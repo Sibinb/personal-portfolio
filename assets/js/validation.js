@@ -39,7 +39,11 @@ function vmobile(){
     if(num<10){
         phoneerror.innerHTML="Give valid phonenumber";
         return false;
-    }else{
+    }else if(num>10){
+        phoneerror.innerHTML="Give valid phonenumber";
+        return true; 
+    }
+    else{
         phoneerror.innerHTML=" ";
         return true;
 
@@ -94,3 +98,6 @@ function vsubmit(){
      
 
 }
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }
